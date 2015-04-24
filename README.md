@@ -2360,16 +2360,32 @@ condition](#safe-assignment-in-condition).
 <sup>[[link](#alias-method-lexically)]</sup>
 
   ```Ruby
+  # good
   class Westerner
     # Rails
-    alias_method given_name, def first_name 
+    alias_method :given_name, def first_name 
       @names.first
     end
 
-    # Plain Ruby
-    alias given_name def first_name 
+    # or
+
+    def first_name 
       @names.first
     end
+    alias_method :first_name, :given_name
+
+    # Plain Ruby
+    alias :given_name def first_name
+      @names.first
+    end
+
+    # or
+
+    def first_name 
+      @names.first
+    end
+    alias :first_name :given_name
+
   end
   ```
 
@@ -3429,9 +3445,19 @@ resource cleanup when possible.
   time, saves times when looking the git history.
 <sup>[[link](#be-nice)]</sup>
 
+* <a name="no-oli"></a>
+  It's also very important that you don't use RubyMine, ever. And if you do in
+  your own time, you cannot speak about it with your co-workers.
+<sup>[[link](#no-oli)]</sup>
+
+
 * <a name="common-sense"></a>
   Use common sense.
 <sup>[[link](#common-sense)]</sup>
+
+* <a name="love"></a>
+  Above all: <3
+<sup>[[link](#love)]</sup>
 
 ## Tools
 
@@ -3462,4 +3488,8 @@ your friends and colleagues. Every comment, suggestion or opinion we
 get makes the guide just a little bit better. And we want to have the
 best possible guide, don't we?
 
-Cheers<br>
+Cheers,<br>
+
+[NetEngine](www.netengine.com.au)
+
+
