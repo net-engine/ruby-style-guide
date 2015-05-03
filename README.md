@@ -3445,12 +3445,6 @@ resource cleanup when possible.
   time, saves times when looking the git history.
 <sup>[[link](#be-nice)]</sup>
 
-* <a name="no-oli"></a>
-  It's also very important that you don't use RubyMine, ever. And if you do in
-  your own time, you cannot speak about it with your co-workers.
-<sup>[[link](#no-oli)]</sup>
-
-
 * <a name="common-sense"></a>
   Use common sense.
 <sup>[[link](#common-sense)]</sup>
