@@ -173,6 +173,12 @@ project-specific guides take precedence for that project.
   "string#{expr}"
   ```
 
+This applies to HAML too:
+
+```Haml
+  .div{ class: computed_classes }
+```
+
 * <a name="no-spaces-braces"></a>
   No spaces after `(`, `[` or before `]`, `)`.
 <sup>[[link](#no-spaces-braces)]</sup>
