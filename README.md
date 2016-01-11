@@ -3373,6 +3373,8 @@ resource cleanup when possible.
 
 ## Misc
 
+* Write specs according to [Better Specs](http://betterspecs.org/)
+<sup>[[link](#always-warn)]</sup>
 * <a name="always-warn"></a>
   Write `ruby -w` safe code.
 <sup>[[link](#always-warn)]</sup>
