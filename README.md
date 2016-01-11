@@ -256,6 +256,9 @@ project-specific guides take precedence for that project.
   else 'Jazz'
   end
 
+  dont_use
+    "inline conditionals" if multiple_lines
+
   result = if some_cond
     calc_something
   else
