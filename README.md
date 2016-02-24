@@ -30,7 +30,7 @@ project-specific guides take precedence for that project.
 * [Regular Expressions](#regular-expressions)
 * [Percent Literals](#percent-literals)
 * [Metaprogramming](#metaprogramming)
-* [Misc](#misc)
+mi* [Misc](#misc)
 * [Tools](#tools)
 
 ## Source Code Layout
@@ -3376,6 +3376,7 @@ resource cleanup when possible.
 
 ## Misc
 
+* Avoid using `try`, in ruby 2.3 you can use `obj.&method` otherwise `obj && obj.method` will do
 * Write specs according to [Better Specs](http://betterspecs.org/)
 <sup>[[link](#always-warn)]</sup>
 * <a name="always-warn"></a>
