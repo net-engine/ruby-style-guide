@@ -1964,6 +1964,17 @@ condition](#safe-assignment-in-condition).
     SOME_CONSTANT = 20
 
     # afterwards we have attribute macros
+    belongs_to :association # Remember inverse_of and dependent
+
+    has_one  :association
+    has_many :associations
+
+    # Group through associations
+    has_one  :association, through: :stuff
+    has_many :associations, through: :stuff
+
+    delegate :x, to: :y
+    alias_method :new, :old
     attr_reader :name
 
     # followed by other macros (if any)
