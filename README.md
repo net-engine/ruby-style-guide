@@ -93,11 +93,9 @@ project-specific guides take precedence for that project.
   class FooError < StandardError
   end
 
-  # okish
+  # good (but do you really need a new Exception?)
   class FooError < StandardError; end
-
-  # good
-  FooError = Class.new(StandardError)
+  class BarError < ArgumentError; end # Remember to use the most specific base Exception
   ```
 
 * <a name="no-single-line-methods"></a>
@@ -1961,9 +1959,6 @@ condition](#safe-assignment-in-condition).
     # extend and include go first
     extend SomeModule
     include AnotherModule
-
-    # inner classes
-    CustomErrorKlass = Class.new(StandardError)
 
     # constants are next
     SOME_CONSTANT = 20
