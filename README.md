@@ -14,7 +14,7 @@ Many projects have their own coding style guidelines (often derived
 from this guide). In the event of any conflicts, such
 project-specific guides take precedence for that project.
 
-[RuboCop][https://github.com/bbatsov/rubocop] is a code analyzer, based on this style guide.
+[RuboCop][https://github.com/bbatsov/rubocop] is a code analyzer, based on this style guide; Use the [`.rubocop.yml` NetEngine](/.rubocop.yml) default.
 
 ## Table of Contents
 
@@ -2361,13 +2361,13 @@ condition](#safe-assignment-in-condition).
   # good
   class Westerner
     # Rails
-    alias_method :given_name, def first_name 
+    alias_method :given_name, def first_name
       @names.first
     end
 
     # or
 
-    def first_name 
+    def first_name
       @names.first
     end
     alias_method :first_name, :given_name
@@ -2379,7 +2379,7 @@ condition](#safe-assignment-in-condition).
 
     # or
 
-    def first_name 
+    def first_name
       @names.first
     end
     alias :first_name :given_name

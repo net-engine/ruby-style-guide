@@ -1,0 +1,37 @@
+require: rubocop-rspec
+AllCops:
+  Exclude:
+    - "db/schema.rb"
+    - "db/migrate/*"
+    - "vendor/**/*"
+    - "bin/*"
+    - "tmp/**/*"
+
+  RunRailsCops: true
+  DisplayCopNames: true
+
+RSpec/DescribeClass:
+  Exclude:
+    - "spec/features/**/*"
+    - "spec/support/**/*"
+
+Style/Documentation:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/ParallelAssignment:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 100
+
+Metrics/ParameterLists:
+  Max: 4
+
+Metrics/MethodLength:
+  Max: 9
